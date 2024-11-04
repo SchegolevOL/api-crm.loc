@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Modules\Admin\Users\Controllers;
+namespace App\Modules\Admin\User\Controllers;
 
-use App\Modules\Admin\Users\Models\User;
+use App\Modules\Admin\User\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class UsersController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,7 +42,7 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Modules\Admin\Users\Models\User  $user
+     * @param  \App\Modules\Admin\User\Models\User  $user
      * @return \Illuminate\Http\Response
      */
     public function show(User $user)
@@ -53,7 +53,7 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Modules\Admin\Users\Models\User  $user
+     * @param  \App\Modules\Admin\User\Models\User  $user
      * @return \Illuminate\Http\Response
      */
     public function edit(User $user)
@@ -65,7 +65,7 @@ class UsersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Modules\Admin\Users\Models\User  $user
+     * @param  \App\Modules\Admin\User\Models\User  $user
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, User $user)
@@ -76,7 +76,7 @@ class UsersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Modules\Admin\Users\Models\User  $user
+     * @param  \App\Modules\Admin\User\Models\User  $user
      * @return \Illuminate\Http\Response
      */
     public function destroy(User $user)
